@@ -54,7 +54,8 @@ select {
     transition: border-color 0.3s;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #0056b3;
 }
 
@@ -89,4 +90,65 @@ button:hover {
     font-size: 0.8rem;
     margin-top: 0.4rem;
     display: none;
+}
+
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resultado h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.9rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.4rem;
+    background-color: #fafafa;
+    transition: transform 0.2s;
+}
+
+.dato:hover {
+    transform: translateY(-2px);
+}
+
+.etiqueta {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dato span:last-child {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.boton-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #004494;
 }
